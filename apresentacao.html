@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GevNeves · Presença digital orgânica para negócios locais e criadores</title>
+<meta name="description" content="Site, Google e Instagram para negócio local. Miniaturas, títulos e SEO para canais no YouTube. Crescimento orgânico, com resultado documentado.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Public+Sans:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#120E1C; --ink-2:#1A1430; --ink-3:#251D42;
+  --violet:#8B6BFF; --magenta:#E5408F; --brass:#C9A227;
+  --text:#F2EFFA; --muted:#A79FC0; --dim:#6F6791;
+  --display:"Archivo",Arial,sans-serif;
+  --body:"Public Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  --pad:clamp(20px,5vw,68px); --maxw:1060px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ink);color:var(--text);font-family:var(--body);
+  font-weight:300;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--maxw);margin:0 auto;padding-left:var(--pad);padding-right:var(--pad)}
+
+h1,h2,h3,h4{font-family:var(--display);font-weight:900;line-height:1.04;letter-spacing:-.025em;margin:0}
+h1{font-size:clamp(34px,6.2vw,64px)}
+h2{font-size:clamp(26px,4.2vw,42px)}
+h3{font-size:clamp(19px,2.4vw,24px);letter-spacing:-.015em}
+p{margin:0 0 1.05em}
+strong{font-weight:600;color:#fff}
+a{color:var(--violet)}
+.eyebrow{font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.22em;
+  text-transform:uppercase;color:var(--dim);margin:0 0 16px}
+.lede{font-size:clamp(16.5px,2vw,19.5px);color:var(--muted);max-width:62ch}
+.small{font-size:14.5px;color:var(--muted)}
+.tiny{font-size:13px;color:var(--dim)}
+
+.fret{border:0;height:28px;margin:0;position:relative;overflow:hidden}
+.fret::before{content:"";position:absolute;left:0;right:0;top:13px;height:1px;
+  background:linear-gradient(90deg,transparent,var(--ink-3) 12%,var(--ink-3) 88%,transparent)}
+.fret::after{content:"";position:absolute;top:10px;left:50%;transform:translateX(-50%);
+  width:200px;height:7px;background-image:radial-gradient(circle,var(--brass) 45%,transparent 46%);
+  background-size:40px 7px;background-repeat:repeat-x;opacity:.5}
+
+header.hero{padding:clamp(38px,7vw,80px) 0 0}
+.badge{display:inline-flex;align-items:center;gap:9px;font-family:var(--mono);font-size:11.5px;
+  font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--brass);
+  border:1px solid rgba(201,162,39,.34);padding:7px 14px;border-radius:999px;margin-bottom:24px}
+.badge::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--brass)}
+h1 em{font-style:normal;color:var(--magenta)}
+
+.factbar{display:grid;gap:1px;background:var(--ink-3);border:1px solid var(--ink-3);
+  border-radius:12px;overflow:hidden;margin-top:34px}
+@media(min-width:700px){.factbar{grid-template-columns:repeat(3,1fr)}}
+.factbar div{background:var(--ink-2);padding:18px 20px}
+.factbar b{display:block;font-family:var(--display);font-weight:800;font-size:26px;letter-spacing:-.02em;color:var(--brass)}
+.factbar span{display:block;margin-top:5px;font-size:12.5px;color:var(--dim);line-height:1.4}
+
+section{padding:clamp(50px,7.5vw,82px) 0 0}
+.sec-head{margin-bottom:24px}
+
+.grid{display:grid;gap:15px}
+@media(min-width:740px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+.card{background:var(--ink-2);border:1px solid var(--ink-3);border-radius:12px;padding:22px}
+.card h4{font-size:15.5px;font-weight:800;letter-spacing:0;margin-bottom:8px}
+.card p{margin:0;font-size:14.5px;color:var(--muted)}
+.card p+p{margin-top:9px}
+
+.case{background:var(--ink-2);border:1px solid var(--ink-3);border-radius:14px;
+  padding:clamp(24px,3.6vw,34px);margin-top:22px}
+.case .tagline{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--violet);margin-bottom:12px}
+.case h3{margin-bottom:14px}
+.headline{font-family:var(--display);font-weight:900;font-size:clamp(30px,5vw,46px);
+  letter-spacing:-.03em;line-height:1.05;color:var(--brass);margin:20px 0 6px}
+.headline small{display:block;font-family:var(--body);font-weight:300;font-size:14.5px;
+  letter-spacing:0;color:var(--muted);margin-top:9px;line-height:1.5}
+
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:16px 0 4px}
+th,td{padding:11px 10px;border-bottom:1px solid var(--ink-3);text-align:right}
+th:first-child,td:first-child{text-align:left;font-weight:400}
+thead th{font-family:var(--mono);font-size:11px;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--dim);font-weight:600}
+td.num{font-family:var(--mono)}
+td.hi{color:var(--brass);font-weight:600}
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+.note{border-left:3px solid var(--brass);padding:2px 0 2px 20px;margin:22px 0;
+  font-size:14.5px;color:var(--muted)}
+.note strong{color:var(--text)}
+
+.price{background:var(--ink-2);border:1px solid var(--ink-3);border-radius:12px;padding:24px;
+  display:flex;flex-direction:column}
+.price.feat{border-color:var(--violet);box-shadow:0 0 0 1px rgba(139,107,255,.25)}
+.price .tier{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--dim);margin-bottom:10px}
+.price .val{font-family:var(--display);font-weight:900;font-size:32px;letter-spacing:-.03em;line-height:1}
+.price .val span{font-family:var(--body);font-weight:300;font-size:14px;color:var(--muted);letter-spacing:0}
+.price ul{list-style:none;margin:18px 0 0;padding:0;font-size:14.5px;color:var(--muted)}
+.price li{padding:7px 0;border-bottom:1px solid var(--ink-3)}
+.price li:last-child{border-bottom:0}
+.price li::before{content:"—  ";color:var(--dim)}
+
+.cta{margin:clamp(52px,8vw,90px) 0 0;padding:clamp(32px,5vw,50px);border-radius:16px;
+  background:linear-gradient(140deg,#2A1E4E,#191230);border:1px solid var(--ink-3)}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.btn{display:inline-block;padding:14px 24px;border-radius:9px;text-decoration:none;
+  font-family:var(--display);font-weight:800;font-size:15px;letter-spacing:-.01em}
+.btn-a{background:linear-gradient(90deg,var(--violet),var(--magenta));color:#fff}
+.btn-b{border:1px solid var(--ink-3);color:var(--text)}
+.btn:focus-visible,a:focus-visible{outline:2px solid var(--brass);outline-offset:3px}
+footer{padding:42px 0 58px;color:var(--dim);font-size:13px}
+footer .mono{font-family:var(--mono);letter-spacing:.1em;text-transform:uppercase;font-size:11px}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <span class="badge">Apresentação comercial · 2026</span>
+    <h1>Crescimento digital<br><em>sem gastar em anúncio.</em></h1>
+
+    <p class="lede" style="margin-top:20px">
+      Sou GevNeves. Trabalho a presença digital de negócios locais e de criadores de conteúdo
+      pelo caminho orgânico — site, Google, Instagram e YouTube. Nos dois casos abaixo, nenhum real
+      foi investido em mídia paga.
+    </p>
+
+    <div class="factbar">
+      <div><b>+85%</b><span>em encomendas na confeitaria, comparando jan–jul de 2025 com o mesmo período de 2026</span></div>
+      <div><b>93×</b><span>mais cliques na busca do Google após a otimização do site</span></div>
+      <div><b>20+</b><span>vídeos com teste de miniatura e título no canal de luthieria</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="quem">
+  <div class="wrap">
+    <p class="eyebrow">Quem faz</p>
+    <h2>Venho da engenharia, não do marketing</h2>
+
+    <p class="lede">
+      Minha formação é em Desenho Industrial e Engenharia de Produção, com mais de uma década em
+      qualidade, processos e desenvolvimento de software. Isso define como trabalho: monto processo,
+      meço e ajusto — em vez de entregar peça bonita e torcer.
+    </p>
+
+    <div class="grid g3" style="margin-top:24px">
+      <div class="card">
+        <h4>Processo antes de estética</h4>
+        <p>Toda peça que publico entra com variações e é medida. O que fica no ar é o que
+        performou, não o que eu achei melhor.</p>
+      </div>
+      <div class="card">
+        <h4>IA como ferramenta, não como discurso</h4>
+        <p>Uso IA para produzir volume e testar mais rápido. Também desenvolvi o ClipFlow, uma
+        aplicação que transforma vídeos longos em cortes legendados automaticamente.</p>
+      </div>
+      <div class="card">
+        <h4>Números que você pode conferir</h4>
+        <p>Tudo que apresento vem de painel — Google Search Console, YouTube Studio, Instagram — e
+        pode ser aberto ao vivo em reunião.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="fret">
+
+<section id="cases">
+  <div class="wrap">
+    <p class="eyebrow">Resultados documentados</p>
+    <h2>Dois casos, dois tipos de negócio</h2>
+
+    <!-- CASE 1 -->
+    <div class="case">
+      <p class="tagline">Caso 01 · Negócio local</p>
+      <h3>Dulcíssima — confeitaria artesanal, Méier · Rio de Janeiro</h3>
+
+      <p class="small" style="margin-bottom:0">
+        Site criado do zero em fevereiro de 2026, otimização de SEO em abril, e reestruturação da
+        presença no Instagram com publicação semanal ininterrupta.
+      </p>
+
+      <div class="headline">27 → 50 encomendas
+        <small>Bolos confeitados e centos de doces, comparando janeiro a julho de 2025 com o mesmo
+        período de 2026. Crescimento de 85%.</small>
+      </div>
+
+      <div class="tscroll">
+        <table>
+          <thead>
+            <tr><th>Busca orgânica no Google</th><th>Antes da otimização</th><th>Depois</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Cliques</td><td class="num">1</td><td class="num hi">93</td></tr>
+            <tr><td>Impressões</td><td class="num">31</td><td class="num hi">2.849</td></tr>
+            <tr><td>Taxa de cliques</td><td class="num">3,2%</td><td class="num">3,3%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="small">
+        O site passou a aparecer para buscas como “doceria Rio de Janeiro”, “bolo pronta entrega” e
+        “bolo de aniversário perto de mim”. Em maio, a conta do Instagram sofreu um ataque e o
+        alcance caiu pela metade; dois meses depois estava recuperado e 18% acima do patamar
+        anterior à ocorrência.
+      </p>
+      <p style="margin-top:22px; font-size:14.5px">        <a href="dulcissima.html">Ver a página de prova completa da Dulcíssima →</a>      </p>
+
+      <div class="note">
+        <strong>Declaração:</strong> sou sócio da Dulcíssima, junto com minha esposa. Não é um
+        cliente — é o negócio onde apliquei o método por dentro, com acesso total aos números. Site
+        e Instagram foram trabalhados ao mesmo tempo, então o crescimento em vendas não pode ser
+        atribuído a um canal isoladamente; pelo volume, a maior parte veio do Instagram.
+      </div>
+    </div>
+
+    <!-- CASE 2 -->
+    <div class="case">
+      <p class="tagline">Caso 02 · Criador de conteúdo</p>
+      <h3>Alexandre Cesar Luthier — canal de luthieria, 100 mil+ inscritos</h3>
+
+      <p class="small" style="margin-bottom:0">
+        Desde janeiro de 2026, respondo pelas miniaturas, títulos e SEO de descrição do canal.
+        Produzo de 9 a 10 propostas de capa e 6 a 7 de título por vídeo; o especialista do canal
+        seleciona três de cada, e o teste A/B do YouTube decide qual fica publicada.
+      </p>
+
+      <div class="headline">+18% de retenção
+        <small>Em um vídeo de 2024 que recebeu nova capa e descrição: a duração média de
+        visualização subiu de 6:14 para 7:21 e a porcentagem assistida foi de 28,8% para 34,0% —
+        com 10% menos impressões e o mesmo número de visualizações.</small>
+      </div>
+
+      <p class="small">
+      <p style="margin-top:22px; font-size:14.5px">        <a href="index.html">Ver a página de prova completa do YouTube →</a>      </p>
+        No acumulado, 884 mil impressões geradas no período, e nove dos dez vídeos que mais geraram
+        impressão no canal têm miniatura minha. O dono do canal publicou espontaneamente um vídeo e
+        um post apresentando meu trabalho à audiência dele.
+      </p>
+
+      <div class="note">
+        <strong>O que este caso não afirma:</strong> a taxa de cliques agregada do canal permaneceu
+        estável no período — meu efeito aparece em retenção, não em clique. O canal é do meu cunhado,
+        e ele declara isso publicamente.
+      </div>
+
+      <p class="small" style="margin-bottom:0">
+        <a href="index.html">Ver a página de prova completa, com as capturas do YouTube Studio →</a>
+      </p>
+    </div>
+
+    <div class="note" style="margin-top:26px">
+      <strong>Transparência:</strong> um dos casos é do meu próprio negócio e o outro é de um
+      familiar. Foi por onde comecei — construindo método em operação real, com acesso total aos
+      painéis. É por isso que apresento os números em detalhe e com as limitações declaradas: para
+      que sejam avaliados pelo dado, e não pela relação.
+    </div>
+  </div>
+</section>
+
+<hr class="fret">
+
+<section id="servicos">
+  <div class="wrap">
+    <p class="eyebrow">O que eu faço</p>
+    <h2>Três serviços</h2>
+
+    <div class="grid g3" style="margin-top:24px">
+      <div class="card">
+        <h4>01 · Presença digital para negócio local</h4>
+        <p>Site ou landing page, Google Perfil da Empresa, SEO local, organização do Instagram e
+        rota de contato direta para o WhatsApp.</p>
+        <p><strong>Para:</strong> confeitaria, salão, consultório, oficina, loja, prestador de
+        serviço — quem vende para gente que mora perto.</p>
+      </div>
+      <div class="card">
+        <h4>02 · Gestão de testes para YouTube</h4>
+        <p>Miniaturas e títulos em múltiplas variações, teste A/B pela própria plataforma, SEO de
+        descrição e leitura mensal dos resultados.</p>
+        <p><strong>Para:</strong> criadores com canal ativo que querem crescer sem depender de
+        sorte no algoritmo.</p>
+      </div>
+      <div class="card">
+        <h4>03 · Reativação de acervo</h4>
+        <p>Nova capa e nova descrição para vídeos antigos que pararam de circular. Não exige gravar
+        nada novo, e o efeito costuma aparecer em poucas semanas.</p>
+        <p><strong>Para:</strong> canais com biblioteca grande e tráfego concentrado nos
+        lançamentos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="fret">
+
+<section id="processo">
+  <div class="wrap">
+    <p class="eyebrow">Como funciona</p>
+    <h2>Diagnóstico primeiro, contrato depois</h2>
+
+    <p class="lede">
+      Não começo por proposta mensal. Começo olhando o que você já tem — porque em boa parte dos
+      casos o gargalo não é produzir mais, é arrumar o que está furando.
+    </p>
+
+    <div class="grid g3" style="margin-top:24px">
+      <div class="card"><h4>1 · Diagnóstico</h4>
+        <p>Reunião, análise dos painéis que você já tem, identificação do gargalo e plano de 30
+        dias por escrito.</p></div>
+      <div class="card"><h4>2 · Execução</h4>
+        <p>Produção das peças, publicação e configuração dos testes. Você aprova antes de qualquer
+        coisa ir ao ar.</p></div>
+      <div class="card"><h4>3 · Leitura</h4>
+        <p>Relatório mensal com o que foi medido, o que funcionou, o que não funcionou e o que
+        muda no mês seguinte.</p></div>
+    </div>
+  </div>
+</section>
+
+<hr class="fret">
+
+<section id="investimento">
+  <div class="wrap">
+    <p class="eyebrow">Investimento</p>
+    <h2>Valores de partida</h2>
+
+    <p class="lede">
+      O escopo final sai depois do diagnóstico, porque depende do que já existe. Abaixo estão o
+      investimento inicial e as mensalidades.
+    </p>
+
+    <h3 style="margin-top:40px">Implantação · site ou landing page</h3>
+    <p class="small" style="margin-bottom:16px">Entrega única. Google Perfil, SEO base, rota de WhatsApp.</p>
+
+    <div class="grid g2" style="margin-top:18px">
+      <div class="price">
+        <p class="tier">Do zero</p>
+        <p class="val">R$ 1.800</p>
+        <ul>
+          <li>Site completo ou landing page</li>
+          <li>Google Perfil da Empresa</li>
+          <li>Unificação de domínio</li>
+          <li>2 semanas de prazo</li>
+        </ul>
+      </div>
+      <div class="price">
+        <p class="tier">Do existente</p>
+        <p class="val">R$ 1.200</p>
+        <ul>
+          <li>Otimização de site já existente</li>
+          <li>SEO base e configuração de Google</li>
+          <li>Rota de contato</li>
+          <li>1 semana de prazo</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid g3" style="margin-top:26px">
+      <div class="price">
+        <p class="tier">Diagnóstico</p>
+        <p class="val">R$ 350 <span>único</span></p>
+        <ul>
+          <li>Análise completa dos seus painéis</li>
+          <li>Reunião de 1 hora</li>
+          <li>Plano de 30 dias por escrito</li>
+          <li>Sem compromisso de continuidade</li>
+        </ul>
+      </div>
+      <div class="price feat">
+        <p class="tier">Presença local · mensal</p>
+        <p class="val">R$ 900 <span>a R$ 1.900/mês</span></p>
+        <ul>
+          <li><strong>Essencial (R$ 900)</strong> · 8 peças/mês + manutenção até 2 alt./semana</li>
+          <li><strong>Consistência (R$ 1.400)</strong> · 12 peças/mês + manutenção até 5 alt./semana</li>
+          <li><strong>Domínio (R$ 1.900)</strong> · 20 peças/mês + manutenção ilimitada</li>
+          <li>Google Perfil ativo e SEO contínuo</li>
+          <li>Relatório mensal</li>
+        </ul>
+      </div>
+      <div class="price">
+        <p class="tier">YouTube · mensal</p>
+        <p class="val">R$ 700 <span>a R$ 1.200/mês</span></p>
+        <ul>
+          <li><strong>Teste (R$ 700)</strong> · até 4 vídeos/mês</li>
+          <li><strong>Ritmo (R$ 950)</strong> · até 6 vídeos/mês</li>
+          <li><strong>Escala (R$ 1.200)</strong> · até 8 vídeos/mês</li>
+          <li>9 a 10 propostas de capa por vídeo</li>
+          <li>6 a 7 propostas de título</li>
+          <li>Teste A/B e leitura mensal</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="price" style="margin-top:15px">
+      <p class="tier">Reativação de acervo · entrega única</p>
+      <p class="val">R$ 600 <span>· pacote de 10 vídeos</span></p>
+      <ul>
+        <li>Nova capa e nova descrição para vídeos que pararam de circular</li>
+        <li>Comparação de desempenho antes e depois, em 45 dias</li>
+        <li>Sem mensalidade — pode ser contratado isoladamente</li>
+      </ul>
+    </div>
+
+    <h3 style="margin-top:46px">O que está e o que não está incluído</h3>
+
+    <div class="grid g2" style="margin-top:18px">
+      <div class="card">
+        <h4>Incluído</h4>
+        <p>Duas rodadas de ajuste por peça. Relatório mensal. Reunião de leitura de resultado.
+        Arquivos finais nos formatos necessários.</p>
+      </div>
+      <div class="card">
+        <h4>Não incluído</h4>
+        <p>Domínio, hospedagem e verba de anúncio. Gravação e edição de vídeo. Fotografia de
+        produto. Ajustes acima das duas rodadas, que são orçados à parte.</p>
+      </div>
+    </div>
+
+    <div class="note" style="margin-top:24px">
+      <strong>Sobre garantias:</strong> não prometo número de vendas, leads, cliques ou inscritos.
+      Resultado depende também de preço, produto, atendimento, reputação e capacidade de entrega —
+      coisas que não estão sob meu controle. O que eu garanto é o processo: produzir, testar, medir
+      e te mostrar o que aconteceu, inclusive quando não funcionar.
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="cta">
+    <p class="eyebrow">Próximo passo</p>
+    <h2>Vamos começar pelo diagnóstico</h2>
+    <p class="lede" style="margin:14px 0 0">
+      Uma hora de conversa, análise do que você já tem e um plano de 30 dias por escrito. Se fizer
+      sentido seguir, a gente segue. Se não fizer, você fica com o plano do mesmo jeito.
+    </p>
+    <div class="actions">
+      <a class="btn btn-a" href="https://wa.me/5521982166115">WhatsApp · (21) 98216-6115</a>
+      <a class="btn btn-b" href="https://instagram.com/gevneves23">@gevneves23</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="mono">GevNeves · Rio de Janeiro</p>
+    <p style="margin:0">Todos os dados citados nesta apresentação vêm de painéis das próprias
+    plataformas e podem ser conferidos ao vivo em reunião.</p>
+  </div>
+</footer>
+
+</body>
+</html>
